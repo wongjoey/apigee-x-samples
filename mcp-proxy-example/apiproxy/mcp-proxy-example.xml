@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="21" name="test-mcp-ptp">
+  <DisplayName>Remote MCP servers</DisplayName>
+  <Description>This is a sample overlay file for creating Remote MCP Apigee Proxy</Description>
+  <CreatedAt>1774579837912</CreatedAt>
+  <LastModifiedAt>1774579837912</LastModifiedAt>
+  <BasePaths>/demomcp/mcp</BasePaths>
+  <Policies>
+    <Policy>CORS-Allow</Policy>
+    <Policy>DC-MCP-Tool</Policy>
+    <Policy>EV-MCP-Tool</Policy>
+    <Policy>JS-Authz-Tool</Policy>
+    <Policy>JS-Filter-Tools</Policy>
+    <Policy>OAuthV2-Verify</Policy>
+    <Policy>RF-Reject-Tool</Policy>
+    <Policy>VA-VerifyAPIKey</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <Resources>
+    <Resource>jsc://mcp-tools-authz.js</Resource>
+    <Resource>jsc://mcp-tools-filter.js</Resource>
+    <Resource>properties://environment.properties</Resource>
+  </Resources>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

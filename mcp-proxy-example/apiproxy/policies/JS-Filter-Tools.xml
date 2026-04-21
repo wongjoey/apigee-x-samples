@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript continueOnError="false" enabled="true" timeLimit="200" name="JS-Filter-Tools">
+  <DisplayName>JS-Filter-Tools</DisplayName>
+  <Properties/>
+  <ResourceURL>jsc://mcp-tools-filter.js</ResourceURL>
+</Javascript>

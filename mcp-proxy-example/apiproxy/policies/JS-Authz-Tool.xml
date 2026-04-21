@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript continueOnError="false" enabled="true" timeLimit="200" name="JS-Authz-Tool">
+  <DisplayName>JS-Authz-Tool</DisplayName>
+  <Properties/>
+  <ResourceURL>jsc://mcp-tools-authz.js</ResourceURL>
+</Javascript>
