@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SanitizeUserPrompt async="false" continueOnError="false" enabled="false" name="SUP-ModelArmorCheck">
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <DisplayName>SUP-ModelArmorCheck</DisplayName>
+  <ModelArmor>
+    <TemplateName>projects/jw-apigeex-0/locations/us-central1/templates/mcp-demo</TemplateName>
+  </ModelArmor>
+  <UserPromptSource>{jsonPath('$.params.arguments.searchTerm',request.content,true)}</UserPromptSource>
+</SanitizeUserPrompt>

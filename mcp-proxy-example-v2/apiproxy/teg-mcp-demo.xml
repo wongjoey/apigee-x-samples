@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="36" name="teg-mcp-demo">
+  <DisplayName>Remote MCP servers</DisplayName>
+  <Description>This is a sample overlay file for creating Remote MCP Apigee Proxy</Description>
+  <CreatedAt>1776907720862</CreatedAt>
+  <LastModifiedAt>1776907740152</LastModifiedAt>
+  <BasePaths>/discovery/mcp</BasePaths>
+  <Policies>
+    <Policy>CORS-Allow</Policy>
+    <Policy>DC-MCP-Tool</Policy>
+    <Policy>EV-MCP-Tool</Policy>
+    <Policy>JS-Authz-Tool</Policy>
+    <Policy>JS-Filter-Tools-NS</Policy>
+    <Policy>JS-Filter-Tools</Policy>
+    <Policy>OAuthV2-Verify</Policy>
+    <Policy>RF-Reject-Tool</Policy>
+    <Policy>VA-VerifyAPIKey</Policy>
+    <Policy>SUP-ModelArmorCheck</Policy>
+    <Policy>SMR-ModelArmorCheck</Policy>
+    <Policy>JS-FlattenStructuredContent</Policy>
+    <Policy>ML-LogToCloud</Policy>
+    <Policy>JS-MCP-Tool-Quota</Policy>
+    <Policy>Q-MCP-Tool-Quota</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <Resources>
+    <Resource>jsc://mcp-tools-authz.js</Resource>
+    <Resource>jsc://mcp-tools-filter-nonstream.js</Resource>
+    <Resource>jsc://mcp-tools-filter.js</Resource>
+    <Resource>properties://environment.properties</Resource>
+    <Resource>jsc://flatten-structured-content.js</Resource>
+    <Resource>jsc://mcp-tools-quota.js</Resource>
+  </Resources>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

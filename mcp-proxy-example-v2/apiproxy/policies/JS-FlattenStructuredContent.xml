@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript continueOnError="false" enabled="true" timeLimit="200" name="JS-FlattenStructuredContent">
+  <DisplayName>JS-FlattenStructuredContent</DisplayName>
+  <Properties/>
+  <ResourceURL>jsc://flatten-structured-content.js</ResourceURL>
+</Javascript>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SanitizeModelResponse async="false" continueOnError="false" enabled="false" name="SMR-ModelArmorCheck">
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <DisplayName>SMR-ModelArmorCheck</DisplayName>
+  <ModelArmor>
+    <TemplateName>projects/jw-apigeex-0/locations/us-central1/templates/mcp-demo</TemplateName>
+  </ModelArmor>
+  <UserPromptSource>{jsonPath('$.params.arguments.searchTerm',request.content,true)}</UserPromptSource>
+  <LLMResponseSource>{flattenedStructuredContent}</LLMResponseSource>
+</SanitizeModelResponse>

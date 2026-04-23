@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-MCP-Tool">
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <JSONPayload>
+    <Variable name="mcp.method">
+      <JSONPath>$.method</JSONPath>
+    </Variable>
+    <Variable name="mcp.tool">
+      <JSONPath>$.params.name</JSONPath>
+    </Variable>
+    <Variable name="mcp.requestid">
+      <JSONPath>$.id</JSONPath>
+    </Variable>
+  </JSONPayload>
+  <Source clearPayload="false">request</Source>
+</ExtractVariables>

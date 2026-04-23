@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging name="ML-LogToCloud">
+  <CloudLogging>
+    <LogName>projects/{organization.name}/logs/apigee-proxy-logs</LogName>
+    <Message contentType="application/json">{
+  "log_type": "{route.target != null ? 'PostClientFlow' : 'PreFlow'}",
+  "organization": "{organization.name}",
+  "environment": "{environment.name}",
+  "proxy_name": "{apiproxy.name}",
+  "app_name": "{developer.app.name}",
+  "product_name": "{apiproduct.name}",
+  "resource_path": "{proxy.pathsuffix}",
+  "client_ip": "{client.ip}",
+  "target_url": "{target.url}",
+  "backend_status": "{target.response.status.code}",
+  "client_status": "{message.status.code}"
+}</Message>
+  </CloudLogging>
+</MessageLogging>

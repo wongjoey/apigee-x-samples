@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota async="false" continueOnError="false" enabled="true" name="Q-MCP-Tool-Quota">
+  <DisplayName>Q-MCP-Tool-Quota</DisplayName>
+  <Properties/>
+  <Identifier ref="mcp.toolquotaid"/>
+  <Allow countRef="mcp.toolquotalimit" count="0"/>
+  <Interval ref="mcp.toolquotainterval">1</Interval>
+  <TimeUnit ref="mcp.toolquotatimeunit">month</TimeUnit>
+  <Distributed>true</Distributed>
+  <Synchronous>true</Synchronous>
+</Quota>
